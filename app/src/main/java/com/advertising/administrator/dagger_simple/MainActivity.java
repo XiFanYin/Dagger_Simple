@@ -7,6 +7,7 @@ import android.view.View;
 
 import com.advertising.administrator.dagger_simple.FourActivity.FourActivity;
 import com.advertising.administrator.dagger_simple.OneActivity.OneActivity;
+import com.advertising.administrator.dagger_simple.SixActivity.SixActivity;
 import com.advertising.administrator.dagger_simple.ThereActivity.ThereActivity;
 import com.advertising.administrator.dagger_simple.TwoActivity.TwoActivity;
 
@@ -43,6 +44,14 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(MainActivity.this, FourActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        findViewById(R.id.btn5).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, SixActivity.class);
                 startActivity(intent);
             }
         });
