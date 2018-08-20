@@ -19,6 +19,7 @@
 
         <activity android:name=".OneActivity.OneActivity" />
         <activity android:name=".TwoActivity.TwoActivity" />
+        <activity android:name=".ThereActivity.ThereActivity" />
     </application>
 
 </manifest>
