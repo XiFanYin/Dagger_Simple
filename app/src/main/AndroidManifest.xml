@@ -3,6 +3,7 @@
     package="com.advertising.administrator.dagger_simple">
 
     <application
+        android:name=".FourActivity.App"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
@@ -20,6 +21,8 @@
         <activity android:name=".OneActivity.OneActivity" />
         <activity android:name=".TwoActivity.TwoActivity" />
         <activity android:name=".ThereActivity.ThereActivity" />
+        <activity android:name=".FourActivity.FourActivity" />
+        <activity android:name=".FourActivity.FiveActivity" />
     </application>
 
 </manifest>
