@@ -5,5 +5,5 @@ import dagger.Component;
 @Component(modules = A02Module.class)
 public interface A02Component {
 
-    HotPerson fanhui();
+    void inject(TwoActivity activity);
 }

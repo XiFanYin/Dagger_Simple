@@ -11,19 +11,13 @@ import javax.inject.Inject;
 
 public class SixActivity extends AppCompatActivity {
 
-    @Inject
-    guazi gz;
 
-    @Inject
-    baozi bz;
 
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_one);
-        DaggerFoodConponent.builder().build().provideXiaochi().inject(this);
-        Log.e("rrrrrrrrrr", gz.toString());
-        Log.e("rrrrrrrrrr", bz.toString());
+
     }
 }

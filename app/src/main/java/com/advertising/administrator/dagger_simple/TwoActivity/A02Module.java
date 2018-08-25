@@ -7,7 +7,7 @@ import dagger.Provides;
 public class A02Module {
 
     @Provides
-    public HotCar provideHotCar() {
-        return new HotCar();
+    public Pseson providePerson() {
+        return new Pseson();
     }
 }

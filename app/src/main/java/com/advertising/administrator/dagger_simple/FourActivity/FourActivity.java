@@ -14,18 +14,6 @@ import javax.inject.Inject;
 
 public class FourActivity extends AppCompatActivity {
 
-    @Inject
-    SharedPreferences sharedPreferences1;
-    @Inject
-    SharedPreferences sharedPreferences2;
-    @Inject
-    Student st1;
-    @Inject
-    Student st2;
-    @Inject
-    Teacher teacher1;
-    @Inject
-    Teacher teacher2;
 
 
     @Override
@@ -33,21 +21,7 @@ public class FourActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_four);
 
-        DaggerActivityComponent.builder().appComponent(ComPonentHolder.getAppComponent()).build().zhuru(this);
-        Log.e("rrrrrrrrrrrr", sharedPreferences1.toString());
-        Log.e("rrrrrrrrrrrr", sharedPreferences2.toString());
-        Log.e("rrrrrrrrrrrr", teacher1.toString());
-        Log.e("rrrrrrrrrrrr", teacher2.toString());
-        Log.e("rrrrrrrrrrrr", st1.toString());
-        Log.e("rrrrrrrrrrrr", st2.toString());
 
-        findViewById(R.id.btn5).setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intnent = new Intent(FourActivity.this, FiveActivity.class);
-                startActivity(intnent);
-            }
-        });
 
     }
 }

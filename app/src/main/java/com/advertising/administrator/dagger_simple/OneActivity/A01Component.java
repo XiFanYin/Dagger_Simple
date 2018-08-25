@@ -2,8 +2,8 @@ package com.advertising.administrator.dagger_simple.OneActivity;
 
 import dagger.Component;
 
-@Component
+@Component(modules = A01Module.class)
 public interface A01Component {
 
-    void inject(Person person);
+    void inject(OneActivity activity);
 }
