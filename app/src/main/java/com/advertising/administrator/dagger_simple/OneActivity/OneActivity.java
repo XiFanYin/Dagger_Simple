@@ -12,7 +12,6 @@ import javax.inject.Named;
 public class OneActivity extends AppCompatActivity {
 
     @Inject
-    @Named("meicanshu")
     Car car;
 
     @Override

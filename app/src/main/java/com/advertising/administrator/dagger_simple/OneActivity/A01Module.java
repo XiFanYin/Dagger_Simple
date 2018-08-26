@@ -19,10 +19,5 @@ public class A01Module {
         return name;
     }
 
-    @Provides
-    @Named("meicanshu")
-    public Car provideCar() {
 
-        return new Car();
-    }
 }
