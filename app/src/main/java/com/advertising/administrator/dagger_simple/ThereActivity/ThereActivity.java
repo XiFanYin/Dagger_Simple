@@ -12,12 +12,22 @@ import javax.inject.Named;
 
 public class ThereActivity extends AppCompatActivity {
 
+    @Inject
+    @hasParm
+    HotCar hotCar1;
+
+    @Inject
+    @noParm
+    HotCar hotCar2;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_one);
 
+        DaggerA03Component.builder().build().inject(this);
+        hotCar1.logName();
 
+        hotCar2.logName();
     }
 }

@@ -8,6 +8,8 @@ import javax.inject.Named;
 public class Car {
     private String name;
 
+
+
     @Inject
     public Car(String name) {
         this.name = name;
