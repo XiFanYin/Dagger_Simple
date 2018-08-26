@@ -18,7 +18,7 @@ public class TwoActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_one);
         DaggerA02Component.builder().build().inject(this);
-        person.getName();
+        person.drive();
 
     }
 }
