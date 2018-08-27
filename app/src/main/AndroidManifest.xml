@@ -21,6 +21,8 @@
         <activity android:name=".TwoActivity.TwoActivity" />
         <activity android:name=".ThereActivity.ThereActivity" />
         <activity android:name=".FourActivity.FourActivity" />
+        <activity android:name=".FiveActivity.FiveActivity" />
+        <activity android:name=".FiveActivity.TeacherActivity" />
         <activity android:name=".SixActivity.SixActivity" />
     </application>
 

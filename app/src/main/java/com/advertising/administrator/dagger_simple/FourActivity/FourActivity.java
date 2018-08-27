@@ -8,9 +8,6 @@ import android.util.Log;
 import com.advertising.administrator.dagger_simple.R;
 
 import javax.inject.Inject;
-import javax.inject.Provider;
-
-import dagger.Lazy;
 
 public class FourActivity extends AppCompatActivity {
 
