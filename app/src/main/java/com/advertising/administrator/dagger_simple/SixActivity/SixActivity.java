@@ -10,14 +10,20 @@ import com.advertising.administrator.dagger_simple.R;
 import javax.inject.Inject;
 
 public class SixActivity extends AppCompatActivity {
-
-
+    @Inject
+    Noodle noodle;
+    @Inject
+    Melon melon;
 
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_one);
+        DaggerFoodComponent.builder().build().getSnack().inject(this);
+
+        Log.e("rrrrrrrrrrr", noodle.toString());
+        Log.e("rrrrrrrrrrr", melon.toString());
 
     }
 }
