@@ -19,10 +19,10 @@ public class FourActivity extends AppCompatActivity {
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_four);
+        setContentView(R.layout.activity_one);
         DaggerA04Component.builder().build().inject(this);
-        Log.e("rrrrrrrrr",student1.toString());
-        Log.e("rrrrrrrrr",student2.toString());
+        Log.e("rrrrrrrrr", student1.toString());
+        Log.e("rrrrrrrrr", student2.toString());
 
 
     }
