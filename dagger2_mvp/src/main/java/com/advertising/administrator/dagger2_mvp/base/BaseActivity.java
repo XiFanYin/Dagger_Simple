@@ -68,7 +68,10 @@ public abstract class BaseActivity<P extends BasePersenter> extends AppCompatAct
     @Override
     protected void onDestroy() {
         super.onDestroy();
-        mPersenter.detach();
+        if (mPersenter != null) {
+            mPersenter.detach();
+        }
+
     }
 }
 

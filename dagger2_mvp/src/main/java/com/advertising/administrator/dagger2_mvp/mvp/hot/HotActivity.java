@@ -4,11 +4,20 @@ import android.os.Bundle;
 
 import com.advertising.administrator.dagger2_mvp.R;
 import com.advertising.administrator.dagger2_mvp.base.BaseActivity;
+import com.advertising.administrator.dagger2_mvp.base.EmptyPersenter;
+import com.advertising.administrator.dagger2_mvp.mvp.hot.di.DaggerHotComponent;
+import com.advertising.administrator.dagger2_mvp.mvp.hot.module.Student;
 
-public class HotActivity extends BaseActivity {
+import javax.inject.Inject;
+
+public class HotActivity extends BaseActivity<EmptyPersenter> {
+
+    @Inject
+    Student student;
+
     @Override
     protected void inject() {
-
+        DaggerHotComponent.builder().build().inject(this);
     }
 
     @Override
