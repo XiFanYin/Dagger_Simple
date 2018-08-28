@@ -6,6 +6,7 @@ import android.util.Log;
 import com.advertising.administrator.dagger2_mvp.R;
 import com.advertising.administrator.dagger2_mvp.base.BaseActivity;
 import com.advertising.administrator.dagger2_mvp.base.EmptyPersenter;
+import com.advertising.administrator.dagger2_mvp.di.ComponentHolder;
 import com.advertising.administrator.dagger2_mvp.mvp.hot.di.DaggerHotComponent;
 import com.advertising.administrator.dagger2_mvp.mvp.hot.module.Student;
 
@@ -18,7 +19,7 @@ public class HotActivity extends BaseActivity<EmptyPersenter> {
 
     @Override
     protected void inject() {
-        DaggerHotComponent.builder().build().inject(this);
+        DaggerHotComponent.builder().appCompoent(ComponentHolder.getAppComponent()).build().inject(this);
     }
 
     @Override
