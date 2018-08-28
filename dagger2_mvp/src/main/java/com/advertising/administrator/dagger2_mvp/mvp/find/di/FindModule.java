@@ -1,6 +1,10 @@
 package com.advertising.administrator.dagger2_mvp.mvp.find.di;
 
+import android.support.v7.widget.LinearLayoutManager;
+import android.support.v7.widget.RecyclerView;
+
 import com.advertising.administrator.dagger2_mvp.mvp.find.persenter.contact.FindContact;
+import com.advertising.administrator.dagger2_mvp.mvp.find.view.FindAdapter;
 
 import dagger.Module;
 import dagger.Provides;
@@ -18,4 +22,16 @@ public class FindModule {
     public FindContact.View provideFindContactView() {
         return view;
     }
+
+
+    @Provides
+    RecyclerView.LayoutManager provideLayoutManager() {
+        return new LinearLayoutManager(view.getActivity(), LinearLayoutManager.VERTICAL, false);
+    }
+
+    @Provides
+    FindAdapter provideAdapter() {
+        return new FindAdapter(null);
+    }
+
 }
