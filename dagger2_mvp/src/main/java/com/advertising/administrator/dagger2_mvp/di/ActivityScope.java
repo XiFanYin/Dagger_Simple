@@ -1,4 +1,4 @@
-package com.advertising.administrator.dagger2_mvp.mvp.home.di;
+package com.advertising.administrator.dagger2_mvp.di;
 
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
@@ -7,5 +7,5 @@ import javax.inject.Scope;
 
 @Scope
 @Retention(RetentionPolicy.RUNTIME)
-public @interface MainScope {
+public @interface ActivityScope {
 }
