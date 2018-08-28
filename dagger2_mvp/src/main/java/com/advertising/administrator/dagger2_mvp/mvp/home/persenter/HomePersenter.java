@@ -1,5 +1,7 @@
 package com.advertising.administrator.dagger2_mvp.mvp.home.persenter;
 
+import android.util.Log;
+
 import com.advertising.administrator.dagger2_mvp.base.BasePresenterImpl;
 import com.advertising.administrator.dagger2_mvp.mvp.home.persenter.contact.HomeContact;
 
@@ -15,6 +17,6 @@ public class HomePersenter extends BasePresenterImpl<HomeContact.view> implement
     @Override
     public void getData() {
 
-
+        Log.e("rrrrrrrrrrr", "eeeeeee" + mView.getAPI().toString());
     }
 }

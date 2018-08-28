@@ -29,9 +29,6 @@ public class AppModule {
     public static final int DEFAULT_TIMEOUT = 30;
 
 
-
-
-
     @Singleton
     @Provides
     public Retrofit provideRetrofit(OkHttpClient client) {
@@ -44,7 +41,8 @@ public class AppModule {
 
     }
 
-
+    @Singleton
+    @Provides
     public OkHttpClient provideOkHttpClient() {
         return new OkHttpClient.Builder()
                 .addInterceptor(new HttpLoggingInterceptor().setLevel(HttpLoggingInterceptor.Level.HEADERS))
