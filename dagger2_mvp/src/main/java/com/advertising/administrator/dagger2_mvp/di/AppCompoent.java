@@ -3,6 +3,7 @@ package com.advertising.administrator.dagger2_mvp.di;
 import android.content.SharedPreferences;
 
 import com.advertising.administrator.dagger2_mvp.base.MyApplication;
+import com.advertising.administrator.dagger2_mvp.net.API;
 
 import javax.inject.Singleton;
 
@@ -15,7 +16,7 @@ public interface AppCompoent {
 
     //当这个Component被别的Component依赖时，必须提供下边方法，不写代表不对依赖Component暴漏对象
 
-    Retrofit provideRetrofit();
+    API provideAPI();
 
     SharedPreferences provideSharedPreferences();
 

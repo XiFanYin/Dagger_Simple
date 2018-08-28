@@ -4,6 +4,7 @@ import android.content.Context;
 import android.content.SharedPreferences;
 
 import com.advertising.administrator.dagger2_mvp.base.MyApplication;
+import com.advertising.administrator.dagger2_mvp.net.API;
 
 import java.util.concurrent.TimeUnit;
 
@@ -28,8 +29,13 @@ public class AppModule {
 
     public static final int DEFAULT_TIMEOUT = 30;
 
-
     @Singleton
+    @Provides
+    public API provideAPI(Retrofit retrofit) {
+        return retrofit.create(API.class);
+    }
+
+
     @Provides
     public Retrofit provideRetrofit(OkHttpClient client) {
         return new Retrofit.Builder()
@@ -41,7 +47,6 @@ public class AppModule {
 
     }
 
-    @Singleton
     @Provides
     public OkHttpClient provideOkHttpClient() {
         return new OkHttpClient.Builder()
@@ -52,6 +57,8 @@ public class AppModule {
                 .build();
 
     }
+
+
 
     @Singleton
     @Provides

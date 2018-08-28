@@ -1,4 +1,4 @@
-package com.advertising.administrator.dagger2_mvp.mvp.hot;
+package com.advertising.administrator.dagger2_mvp.mvp.hot.view;
 
 import android.os.Bundle;
 import android.util.Log;

@@ -17,7 +17,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".mvp.hot.HotActivity" />
+        <activity android:name=".mvp.hot.view.HotActivity" />
+
+        <activity android:name=".mvp.find.view.FindActivity" />
     </application>
 
 </manifest>

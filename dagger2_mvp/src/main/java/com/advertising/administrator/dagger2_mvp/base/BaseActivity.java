@@ -8,15 +8,13 @@ import com.advertising.administrator.dagger2_mvp.net.API;
 
 import javax.inject.Inject;
 
-import retrofit2.Retrofit;
-
 public abstract class BaseActivity<P extends BasePersenter> extends AppCompatActivity implements BaseView {
 
     @Inject
     public P mPersenter;
 
     @Inject
-    public Retrofit retrofit;
+    public API api;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -62,7 +60,7 @@ public abstract class BaseActivity<P extends BasePersenter> extends AppCompatAct
 
     @Override
     public API getAPI() {
-        return retrofit.create(API.class);
+        return api;
     }
 
     @Override

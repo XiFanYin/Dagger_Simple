@@ -2,7 +2,7 @@ package com.advertising.administrator.dagger2_mvp.mvp.hot.di;
 
 import com.advertising.administrator.dagger2_mvp.di.ActivityScope;
 import com.advertising.administrator.dagger2_mvp.di.AppCompoent;
-import com.advertising.administrator.dagger2_mvp.mvp.hot.HotActivity;
+import com.advertising.administrator.dagger2_mvp.mvp.hot.view.HotActivity;
 
 import dagger.Component;
 
