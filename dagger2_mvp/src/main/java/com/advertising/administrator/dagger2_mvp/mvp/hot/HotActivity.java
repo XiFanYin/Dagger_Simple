@@ -1,6 +1,7 @@
 package com.advertising.administrator.dagger2_mvp.mvp.hot;
 
 import android.os.Bundle;
+import android.util.Log;
 
 import com.advertising.administrator.dagger2_mvp.R;
 import com.advertising.administrator.dagger2_mvp.base.BaseActivity;
@@ -27,7 +28,7 @@ public class HotActivity extends BaseActivity<EmptyPersenter> {
 
     @Override
     protected void initView(Bundle savedInstanceState) {
-
+        Log.e("rrrrrr", student.toString());
     }
 
     @Override
