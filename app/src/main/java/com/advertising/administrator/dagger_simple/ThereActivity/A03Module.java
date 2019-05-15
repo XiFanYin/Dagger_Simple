@@ -11,10 +11,16 @@ import dagger.Provides;
 public class A03Module {
 
     @Provides
-    public String provideName() {
+    @Named("name")
+    public String provideNameee() {
         return "eee";
     }
 
+    @Provides
+
+    public String provideNamee() {
+        return "eee";
+    }
     @Provides
     @noParm
     public HotCar provideNullParm() {
@@ -23,7 +29,7 @@ public class A03Module {
 
     @Provides
     @hasParm
-    public HotCar providehasParm(String name) {
+    public HotCar providehasParm(@Named("name") String name) {
 
         return new HotCar(name);
     }
